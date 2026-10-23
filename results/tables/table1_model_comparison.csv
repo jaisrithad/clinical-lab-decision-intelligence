@@ -1,0 +1,7 @@
+Task,Model,CV ROC-AUC,Test ROC-AUC,PR-AUC,Brier,F1
+Specimen rejection,LogisticRegression,0.705 ± 0.031,0.702,0.172,0.187,0.139
+Specimen rejection,RandomForest,0.714 ± 0.036,0.682,0.149,0.060,0.224
+Specimen rejection,XGBoost,0.634 ± 0.035,0.654,0.093,0.069,0.144
+TAT breach,LogisticRegression,0.894 ± 0.008,0.886,0.433,0.125,0.313
+TAT breach,RandomForest,0.877 ± 0.010,0.874,0.385,0.072,0.390
+TAT breach,XGBoost,0.864 ± 0.009,0.871,0.369,0.070,0.364

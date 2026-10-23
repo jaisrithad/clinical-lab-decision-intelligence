@@ -1,0 +1,16 @@
+\begin{table*}[!t]
+\centering
+\caption{Cost-of-quality comparison of decision policies on the held-out test set (unit costs: \$15 intervene, \$120 per unmitigated breach).}
+\label{tab:cost}
+\begin{tabular}{lccccc}
+\hline
+Decision policy & Threshold & Total cost (USD) & Cost / 1000 samples & Savings vs. treat-none (\%) & Savings vs. best baseline (\%) \\
+\hline
+Treat none (no intervention) & - & 30480.0 & 6285.83 & 0.0 & -19.0 \\
+Treat all (expedite every sample) & - & 72735.0 & 15000.0 & -138.6 & -184.1 \\
+Priority rule (expedite STAT only) & - & 25605.0 & 5280.47 & 16.0 & 0.0 \\
+Model @ threshold 0.50 & 0.50 & 21900.0 & 4516.4 & 28.1 & 14.5 \\
+Model @ cost-optimal threshold & 0.62 & 19545.0 & 4030.73 & 35.9 & 23.7 \\
+\hline
+\end{tabular}
+\end{table*}
